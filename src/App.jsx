@@ -724,8 +724,8 @@ export default function App() {
 
             {/* Corner text */}
             <div style={{ position: "absolute", top: 28, left: 28, animation: entered ? "fadeUp .8s .2s cubic-bezier(.16,1,.3,1) both" : "none" }}>
-              <div style={{ fontSize: 9, fontWeight: 400, letterSpacing: ".18em", color: "rgba(255,255,255,.35)", textTransform: "uppercase" }}>AI PROMPT STUDIO</div>
-              <div style={{ fontSize: 9, fontWeight: 300, letterSpacing: ".08em", color: "rgba(255,255,255,.12)", marginTop: 4 }}>CREATIVE ARCHIVE</div>
+              <div style={{ fontSize: 9, fontWeight: 400, letterSpacing: ".18em", color: "rgba(255,255,255,.35)", textTransform: "uppercase" }}>AI PROMPT STUDIO EDITORIAL</div>
+              <div style={{ fontSize: 9, fontWeight: 300, letterSpacing: ".08em", color: "rgba(255,255,255,.12)", marginTop: 4 }}>VIDEO · IMAGE · AD PROMPT BUILDER</div>
             </div>
 
             <div style={{ position: "absolute", top: 28, right: 28, textAlign: "right", animation: entered ? "fadeUp .8s .4s cubic-bezier(.16,1,.3,1) both" : "none" }}>
@@ -754,7 +754,7 @@ export default function App() {
                   BUILDER{builder.length > 0 && <span style={{ marginLeft: 4, color: "rgba(255,255,255,.4)" }}>({builder.length})</span>}
                 </button>
               </div>
-              <input type="text" placeholder="Search..." value={search} onChange={e => setSearch(e.target.value)} className="srch" />
+              <input type="text" placeholder="Search prompt categories..." value={search} onChange={e => setSearch(e.target.value)} className="srch" />
             </div>
 
             {/* Category list */}
@@ -779,7 +779,7 @@ export default function App() {
 
             {/* Footer */}
             <div style={{ marginTop: 60, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,.04)", fontSize: 9, fontWeight: 300, color: "rgba(255,255,255,.06)", letterSpacing: ".08em" }}>
-              AI PROMPT STUDIO — {CATEGORIES.length} CATEGORIES · {TOTAL} PRESETS
+              EDITORIAL PROMPT STUDIO — {CATEGORIES.length} CATEGORIES · {TOTAL} PRESETS
             </div>
             <div style={{ height: showB ? 200 : 40 }} />
           </div>
